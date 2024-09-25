@@ -9,3 +9,5 @@ class Empleado:
     def __repr__(self):
         return f'Empleado({self.nombre}'
     
+    def __hash__(self):
+        return hash(self.nombre)
